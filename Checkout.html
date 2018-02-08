@@ -1,0 +1,352 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.18.2">
+    <title>Checkout – cabify v0.1.0</title>
+    <link rel="stylesheet" href="dist/app-81d381dea4.css" />
+    
+    <script src="dist/sidebar_items-0e8a914258.js"></script>
+    
+    
+    
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        cabify
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+    
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">cabify v0.1.0</small>
+        Checkout
+        
+      </h1>
+
+      
+        <section id="moduledoc">
+          <p>Checkout module.
+Used to store and calculate user’s basket</p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#init/1">init(rule_list \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Initialize checkout process</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#remove/1">remove(arg1)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Remove one item of product from Basket,
+and recalculate basket</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#reset/1">reset(rule_list \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Clean up users basket</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#scan/1">scan(arg1)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Put choosen product in user’s basket.
+Recalculate basket totals and discount</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#show/0">show()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Show Stored Basket</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#summary/0">summary()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Show Total Basket Price And Discount</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="init/1">
+  
+  
+    <span id="init/0"></span>
+  
+  <div class="detail-header">
+    <a href="#init/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">init(rule_list \\ [])</span>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>init(<a href="https://hexdocs.pm/elixir/List.html#t:t/0">List.t</a>()) :: <a href="https://hexdocs.pm/elixir/Atom.html#t:t/0">Atom.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Initialize checkout process.</p>
+<p>Returns <code class="inline">:ok</code> | <code class="inline">:error</code>.</p>
+
+  </section>
+</div>
+<div class="detail" id="remove/1">
+  
+  
+  <div class="detail-header">
+    <a href="#remove/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">remove(arg1)</span>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>remove(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/Atom.html#t:t/0">Atom.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Remove one item of product from Basket,
+and recalculate basket.</p>
+<p>Returns <code class="inline">:ok</code> | <code class="inline">error</code></p>
+
+  </section>
+</div>
+<div class="detail" id="reset/1">
+  
+  
+    <span id="reset/0"></span>
+  
+  <div class="detail-header">
+    <a href="#reset/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">reset(rule_list \\ [])</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Clean up users basket.</p>
+<p>Returns <code class="inline">:ok</code>.</p>
+
+  </section>
+</div>
+<div class="detail" id="scan/1">
+  
+  
+  <div class="detail-header">
+    <a href="#scan/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">scan(arg1)</span>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>scan(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/Atom.html#t:t/0">Atom.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Put choosen product in user’s basket.
+Recalculate basket totals and discount.</p>
+<p>There are only 3 kind of product to sell:</p>
+<ul>
+<li>voucher
+</li>
+<li>tshirt
+</li>
+<li>mug
+</li>
+</ul>
+<p>Returns <code class="inline">:ok</code> | :<code class="inline">error</code></p>
+
+  </section>
+</div>
+<div class="detail" id="show/0">
+  
+  
+  <div class="detail-header">
+    <a href="#show/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">show()</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Show Stored Basket</p>
+<p>Returns <code class="inline">%Basket{}</code>.</p>
+
+  </section>
+</div>
+<div class="detail" id="summary/0">
+  
+  
+  <div class="detail-header">
+    <a href="#summary/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">summary()</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Show Total Basket Price And Discount</p>
+<p>Returns <code class="inline">%{total: 0.00, discount: 0.00}</code>.</p>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.18.2),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-ad33bc0e7d.js"></script>
+  
+  
+  
+  
+  </body>
+</html>
+
