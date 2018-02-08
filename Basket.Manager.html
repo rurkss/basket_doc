@@ -5,14 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.18.2">
-    <title>Basket.Manager – cabify v0.1.0</title>
+    <title>Basket.Manager – chexkout v0.1.0</title>
     <link rel="stylesheet" href="dist/app-81d381dea4.css" />
-    
+
     <script src="dist/sidebar_items-0e8a914258.js"></script>
-    
-    
-    
-    
+
+
+
+
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
@@ -28,17 +28,17 @@
 </button>
 <section class="sidebar">
 
-  
+
   <a href="api-reference.html" class="sidebar-projectLink">
     <div class="sidebar-projectDetails">
       <h1 class="sidebar-projectName">
-        cabify
+        chexkout
       </h1>
       <h2 class="sidebar-projectVersion">
         v0.1.0
       </h2>
     </div>
-    
+
   </a>
 
   <form class="sidebar-search" action="search.html">
@@ -51,13 +51,13 @@
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
 
-    
+
       <li><a id="modules-list" href="#full-list">Modules</a></li>
-    
 
-    
 
-    
+
+
+
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -69,20 +69,20 @@
 
 
       <h1>
-        <small class="visible-xs">cabify v0.1.0</small>
+        <small class="visible-xs">chexkout v0.1.0</small>
         Basket.Manager
-        
+
       </h1>
 
-      
+
         <section id="moduledoc">
           <p>Basket Manager module.
 Used for manipulate products in basket</p>
 
         </section>
-      
 
-      
+
+
         <section id="summary" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#summary">
@@ -91,9 +91,9 @@ Used for manipulate products in basket</p>
             </a>
             Summary
           </h1>
-          
 
-          
+
+
   <div class="summary-functions summary">
     <h2>
       <a href="#functions">Functions</a>
@@ -102,7 +102,7 @@ Used for manipulate products in basket</p>
   <div class="summary-signature">
     <a href="#add_item/1">add_item(item)</a>
   </div>
-  
+
     <div class="summary-synopsis"><p>Update Agent state
 Steps:</p>
 <ul>
@@ -118,81 +118,81 @@ Steps:</p>
 </li>
 </ul>
 </div>
-  
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#apply_rules/1">apply_rules(b)</a>
   </div>
-  
+
     <div class="summary-synopsis"><p>Iterate through rules and apply each rule
 to the product list.
 But before we should set all discount to zero</p>
 </div>
-  
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#basket/0">basket()</a>
   </div>
-  
+
     <div class="summary-synopsis"><p>Get state from Agent.
 Returns <code class="inline">%Basket{}</code></p>
 </div>
-  
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#basket/1">basket(basket)</a>
   </div>
-  
+
     <div class="summary-synopsis"><p>Set state to Agent.
 Returns <code class="inline">:ok</code></p>
 </div>
-  
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#init/1">init(rule_list)</a>
   </div>
-  
+
     <div class="summary-synopsis"><p>Starts Gen Server and hold basket as state of it
 Returns <code class="inline">{:ok, #PID}</code></p>
 </div>
-  
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#recalculate/1">recalculate(basket)</a>
   </div>
-  
+
     <div class="summary-synopsis"><p>Update Basket’s total and discount by
 calculating all items discount and items
 price separately</p>
 </div>
-  
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#reset/1">reset(rule_list)</a>
   </div>
-  
+
     <div class="summary-synopsis"><p>Set empty List in state of Agent</p>
 </div>
-  
+
 </div>
 
   </div>
 
 
-          
+
 
         </section>
-      
 
-      
 
-      
+
+
+
         <section id="functions" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#functions">
@@ -202,23 +202,23 @@ price separately</p>
             Functions
           </h1>
           <div class="detail" id="add_item/1">
-  
-  
+
+
   <div class="detail-header">
     <a href="#add_item/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">add_item(item)</span>
-    
-    
-    
+
+
+
       <div class="specs">
-        
+
           <pre>add_item(Struct.t()) :: <a href="https://hexdocs.pm/elixir/Atom.html#t:t/0">Atom.t</a>()</pre>
-        
+
       </div>
-    
+
   </div>
   <section class="docstring">
     <p>Update Agent state
@@ -240,23 +240,23 @@ Steps:</p>
   </section>
 </div>
 <div class="detail" id="apply_rules/1">
-  
-  
+
+
   <div class="detail-header">
     <a href="#apply_rules/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">apply_rules(b)</span>
-    
-    
-    
+
+
+
       <div class="specs">
-        
+
           <pre>apply_rules(<a href="Basket.html#t:t/0">Basket.t</a>()) :: <a href="https://hexdocs.pm/elixir/List.html#t:t/0">List.t</a>()</pre>
-        
+
       </div>
-    
+
   </div>
   <section class="docstring">
     <p>Iterate through rules and apply each rule
@@ -267,17 +267,17 @@ But before we should set all discount to zero</p>
   </section>
 </div>
 <div class="detail" id="basket/0">
-  
-  
+
+
   <div class="detail-header">
     <a href="#basket/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">basket()</span>
-    
-    
-    
+
+
+
   </div>
   <section class="docstring">
     <p>Get state from Agent.
@@ -286,17 +286,17 @@ Returns <code class="inline">%Basket{}</code>.</p>
   </section>
 </div>
 <div class="detail" id="basket/1">
-  
-  
+
+
   <div class="detail-header">
     <a href="#basket/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">basket(basket)</span>
-    
-    
-    
+
+
+
   </div>
   <section class="docstring">
     <p>Set state to Agent.
@@ -305,23 +305,23 @@ Returns <code class="inline">:ok</code>.</p>
   </section>
 </div>
 <div class="detail" id="init/1">
-  
-  
+
+
   <div class="detail-header">
     <a href="#init/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">init(rule_list)</span>
-    
-    
-    
+
+
+
       <div class="specs">
-        
+
           <pre>init(<a href="https://hexdocs.pm/elixir/List.html#t:t/0">List.t</a>()) :: Struct.t()</pre>
-        
+
       </div>
-    
+
   </div>
   <section class="docstring">
     <p>Starts Gen Server and hold basket as state of it
@@ -330,23 +330,23 @@ Returns <code class="inline">{:ok, #PID}</code>.</p>
   </section>
 </div>
 <div class="detail" id="recalculate/1">
-  
-  
+
+
   <div class="detail-header">
     <a href="#recalculate/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">recalculate(basket)</span>
-    
-    
-    
+
+
+
       <div class="specs">
-        
+
           <pre>recalculate(<a href="Basket.html#t:t/0">Basket.t</a>()) :: <a href="Basket.html#t:t/0">Basket.t</a>()</pre>
-        
+
       </div>
-    
+
   </div>
   <section class="docstring">
     <p>Update Basket’s total and discount by
@@ -357,17 +357,17 @@ price separately</p>
   </section>
 </div>
 <div class="detail" id="reset/1">
-  
-  
+
+
   <div class="detail-header">
     <a href="#reset/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">reset(rule_list)</span>
-    
-    
-    
+
+
+
   </div>
   <section class="docstring">
     <p>Set empty List in state of Agent.</p>
@@ -377,9 +377,9 @@ price separately</p>
 </div>
 
         </section>
-      
 
-      
+
+
           <footer class="footer">
         <p>
           <span class="line">
@@ -397,10 +397,10 @@ price separately</p>
 </section>
 </div>
   <script src="dist/app-ad33bc0e7d.js"></script>
-  
-  
-  
-  
+
+
+
+
   </body>
 </html>
 
